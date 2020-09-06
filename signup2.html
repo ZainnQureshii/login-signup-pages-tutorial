@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		body
+		{
+			font-family: candara;	
+		}
+		.container
+		{
+			background-color: #ffffff;
+			margin-top: 100px;
+			width: 70%;
+			border: 2px solid gray;
+			border-radius: 8px;
+		}
+		
+		.page-header h1
+		{
+			float: left;
+	
+		}
+		.page-header img
+		{
+			max-width: 80px;
+			
+		}
+		
+		label
+		{
+			font-size: 18px;
+		}
+
+		.panel-heading
+		{
+			background-color: #C1392B !important;
+			color: #ffffff !important;
+		}
+		
+		.panel-body
+		{
+			background-color: #E8E8E8;
+		}
+
+		.fa {
+		  padding: 20px;
+		  font-size: 20px;
+		  width: 150px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+		    opacity: 0.8;
+		    color: white;
+		}
+		.fa-facebook {
+ 		 background: #3B5998;
+  			color: white;
+			}
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		}
+
+		.fa-linkedin {
+		  background: #007bb5;
+		  color: white;
+		}
+
+
+		.validation
+		{
+			margin-top: 5px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>ABC SOLUTIONS </h1>
+			<img src="1.png" class="img-responsive" alt="Image Not Found">
+		 </div>
+
+		 <br>
+
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="panel panel-default">
+
+					<div class="panel-heading">
+						<h2>Sign Up</h2>
+						<p>Be a part of our ommunity</p>
+					</div>
+					<div class="panel-body">
+						<form method="post">
+							<div class="form-group">
+								<span class="glyphicon glyphicon-user logo-small"></span><label>Full Name:</label>
+								<input type="name" name="name" class="form-control" placeholder="Enter Full Name" id="FullName" required="">
+								
+
+							</div>
+
+							<div class="form-group">
+								<span class="glyphicon glyphicon-user logo-small"></span><label>UserName:</label>
+								<input type="username" name="username" class="form-control" placeholder="Enter UserName" id="UserName" required="">
+								
+
+							</div>
+
+
+							<div class="form-group">
+								<span class="glyphicon glyphicon-user logo-small"></span><label>Email:</label>
+								<input type="email" name="email" class="form-control" placeholder="Enter Email" id="E-email" required="">
+								
+
+							</div>
+							<div class="form-group">
+								<span class="glyphicon glyphicon-eye-open logo-small"></span><label>Password:</label>
+								<input type="password" name="password" class="form-control" placeholder="Enter Password" id="Password" required="">
+								
+
+							</div>
+							<div class="form-group">
+								<span class="glyphicon glyphicon-eye-open logo-small"></span><label>Confirm Password:</label>
+								<input type="password" name="password" class="form-control" placeholder="Enter Confirm Password" id="CPassword" required="">
+								
+
+							</div>
+
+							<button class="btn btn-default btn-group-justified" style="background-color:#C1392B ; color: #ffffff;" onclick="validate()"><span style="font-size: 13px;" class="glyphicon glyphicon-pencil logo-small"></span> Sign Up</button>
+						</form>
+					</div>
+
+					<div class="panel-footer" style="background-color: #ffffff;">
+						<small>Already a  member? Sign in<a href="login.html"> Here</a></small>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-sm-5 text-center">
+				<h2>Or Sign Up with Your Social Media Account</h2><br>
+				<div class="btn-">
+				<a href="#" class="fa fa-facebook"> Facebook</a>
+				<a href="#" class="fa fa-twitter"> Twitter</a>
+				<a href="#" class="fa fa-google"> Google</a>
+				<a href="#" class="fa fa-linkedin"> Linkdin</a>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function validate() 
+	{
+		
+	
+		var fullname = document.getElementById('FullName').value;
+		var username = document.getElementById('UserName').value;
+		var email = document.getElementById('E-email').value;
+		var password = document.getElementById('Password').value;
+		var cpassword = document.getElementById('CPassword').value;
+
+		if (fullname=="") 
+		{
+			alert("Enter Full Name")
+			// alert ("Kindly enter Your Fullname");
+			return false;
+		}
+
+
+		if (username=="") 
+		{
+			alert("Enter User Name")
+			// document.getElementById('pusername').innerHTML = "Please Enter User Name";
+			return false;
+		}
+
+		if (email=="") 
+		{
+			alert("Enter Email")
+			// document.getElementById('pemail').innerHTML = "Please Enter Email";
+			return false;
+		}
+
+		if (password=="") 
+		{
+			alert("Enter Password")
+			// document.getElementById('ppass').innerHTML = "Please Enter Password";
+			return false;
+		}
+
+		if (cpassword=="") 
+		{
+			alert("Enter Confirm Password")
+			// document.getElementById('pcpass').innerHTML = "Please Enter Your Password Again";
+			return false;
+		}
+
+		
+		if(password!=cpassword)
+		{
+			alert("Your Password Doesn't Match With Confirm Password");
+		}
+
+		else
+		{
+			alert("SignUp Successful!");
+		}
+	
+	}
+	
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Latest font-awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<meta charset="UTF-8">
+	
+	<title>Login</title>
+	
+	<style>
+		*{
+			margin: 0%;
+			padding: 0%;
+			font-variant: small-caps;
+		}	
+
+		.container{
+			width: 50%;
+			box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 700ms;
+		}
+
+        .container:hover{
+            border: 0;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+        }
+	</style>
+
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="header"><h2>Welcome To Our Community</h2><hr></div>
+		<div class="body">
+			<form class="form" method="POST">
+				<label><span class="fa fa-user"></span> Username</label>
+				<input type="text" id="name" name="name" class="form-control" placeholder="Enter Username" required="">
+				<br>
+				<label><span class="fa fa-key"></span> Password</label>
+				<input type="password" id="name" name="name" class="form-control" placeholder="Enter Password" required="">
+				<br>
+				<button type="submit" class="btn btn-primary">Login</button>
+				<hr>
+				<h5>Not a member? Sign Up <a href="signup.html">Here</a></h5>
+			</form>
+		</div>
+	</div>
+
+	
+</body>
+</html>

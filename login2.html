@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<style type="text/css">
+		body
+		{
+			font-family: candara;
+		}
+		.container
+		{
+			background-color: #ffffff;
+			margin-top: 100px;
+			width: 50%;
+			border: 2px solid gray;
+			border-radius: 8px;
+		}
+
+		.page-header h1
+		{
+			float: left;
+	
+		}
+		.page-header img
+		{
+			max-width: 80px;
+			
+		}
+		
+		label
+		{
+			font-size: 18px;
+		}
+
+		.panel-heading
+		{
+			background-color: #16A086 !important;
+			color: #ffffff !important;
+		}
+
+		.panel-body
+		{
+			background-color: #E8E8E8;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>ABC SOLUTIONS </h1>
+			<img src="1.png" class="img-responsive" alt="Image Not Found">
+		 </div>
+		 <br>
+				<div class="panel panel-default">
+
+					<div class="panel-heading">
+						<h2>Login</h2>
+						<p>See whats goin on in our company today</p>
+					</div>
+					
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<span class="glyphicon glyphicon-user logo-small"></span><label>UserName:</label>
+								<input type="username" name="username" class="form-control" placeholder="Enter UserName" id="UserName">
+
+							</div>
+							<div class="form-group">
+								<span class="glyphicon glyphicon-eye-open logo-small"></span><label>Password:</label>
+								<input type="password" name="password" class="form-control" placeholder="Enter Password" id="Password">
+
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox" name="Remember">Remember me</label>
+
+							</div>
+
+							<button class="btn btn-default btn-group-justified" style="background-color:#16A086 ; color: #ffffff;"><span style="font-size: 13px;" class="glyphicon glyphicon-lock logo-small" onclick="validate()"></span> Login</button><br>
+						
+							
+
+						</form>
+					</div>
+
+					<div class="panel-footer" style="background-color: #ffffff;">
+						<small>Forgot Password? Click <a href="#">Here</a></small> <br><small>Not a member? Sign Up <a href="signup.html">Here</a></small>
+					</div>
+				</div>
+
+			</div>
+			
+</body>
+</html>
+
+<script type="text/javascript">
+	function validate() 
+	{
+		
+		var username = document.getElementById('UserName').value;
+		var password = document.getElementById('Password').value;
+		
+
+		if(username=="") 
+		{
+			alert("User Name");
+			// document.getElementById('pemail').innerHTML = "Please Enter Email";
+			return false;
+		}
+
+		if(password=="") 
+		{
+			alert("Enter Password");
+			// document.getElementById('ppass').innerHTML = "Please Enter Password";
+			return false;
+		}
+
+		else
+		{
+			alert("SignUp Successful!");
+		}
+	
+	}
+	
+</script>
